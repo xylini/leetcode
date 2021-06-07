@@ -28,36 +28,36 @@ class ListNode:
 
 
 class Solution:
+    @staticmethod
+    def calcUnitAndAcc(acc: int) -> (ListNode, int):
+        return ListNode(acc % 10), acc // 10
+
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         head: ListNode = ListNode()
-        tmp = 0
+        acc = 0
         l3 = head
 
         while l1 and l2:
-            tmp = tmp + l1.val + l2.val
-            l3.next = ListNode(tmp % 10)
-            tmp = tmp // 10
+            acc = acc + l1.val + l2.val
+            l3.next, acc = Solution.calcUnitAndAcc(acc)
             l1 = l1.next
             l2 = l2.next
             l3 = l3.next
 
         while l1:
-            tmp += l1.val
-            l3.next = ListNode(tmp % 10)
-            tmp = tmp // 10
+            acc += l1.val
+            l3.next, acc = Solution.calcUnitAndAcc(acc)
             l1 = l1.next
             l3 = l3.next
 
         while l2:
-            tmp += l2.val
-            l3.next = ListNode(tmp % 10)
-            tmp = tmp // 10
+            acc += l2.val
+            l3.next, acc = Solution.calcUnitAndAcc(acc)
             l2 = l2.next
             l3 = l3.next
 
-        while tmp != 0:
-            l3.next = ListNode(tmp % 10)
-            tmp = tmp // 10
+        while acc != 0:
+            l3.next, acc = Solution.calcUnitAndAcc(acc)
             l3 = l3.next
 
         return head.next
