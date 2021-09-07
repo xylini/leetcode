@@ -1,7 +1,7 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         l = '|' + '|'.join(s) + '|'
-        results = []
+        result = (0, '')
 
         for center in range(len(l)):
             rad = 0
@@ -11,10 +11,10 @@ class Solution:
                     l[center - (rad+1)] == l[center + (rad+1)]:
                 rad += 1
 
-            results.append(rad)
+            if result[0] < rad:
+                result = (rad, l[center - rad: center + rad + 1])
 
-        m = max(results)
-        return m
+        return ''.join(result[1].split('|'))
 
 
 def main():
