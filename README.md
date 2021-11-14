@@ -6,4 +6,5 @@
 5. [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) - [Python](https://github.com/xylini/leetcode/blob/main/solutions/5-longest-palindromic-substring/longest-palindromic-substring.py)
 6. [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) - [Python - A](https://github.com/xylini/leetcode/blob/main/solutions/6-zigzag-conversion/zigzag-conversion-A.py)
 7. [Reverse Integer](https://leetcode.com/problems/reverse-integer/) - [Python](https://github.com/xylini/leetcode/blob/main/solutions/7-reverse-integer/reverse-integer.py)
-8. [Palindrome Number](https://leetcode.com/problems/palindrome-number/) - [Python - A](https://github.com/xylini/leetcode/blob/main/solutions/9-palindrome-number/palindrome-number-A.py), [Python - B](https://github.com/xylini/leetcode/blob/main/solutions/9-palindrome-number/palindrome-number-B.py)
+8. [String To Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)
+9. [Palindrome Number](https://leetcode.com/problems/palindrome-number/) - [Python - A](https://github.com/xylini/leetcode/blob/main/solutions/9-palindrome-number/palindrome-number-A.py), [Python - B](https://github.com/xylini/leetcode/blob/main/solutions/9-palindrome-number/palindrome-number-B.py)
